@@ -1,0 +1,30 @@
+data flow diagram(dfd)
+Amazon:
+->user- user accesses the amazon system through their account.
+for that they have to register.(a table for register is created having
+columns 1.userid (primary key) 2.mobile no 3. email 4.password)
+
+-user types in the search criteria to look for specific products.
+user is able to view products(user accesses this from amazon product
+database).
+(there is a table for products as well having columns 
+1.product id (primary key) 2.product image 3. product name 
+4. product mrp 5. rating of product 6. discount on product price 
+7. discounted price) 
+
+-user can then select the product that they like and add to the cart
+(table for cart has columns 1. cart id 2. product quantity 3. product id
+4. user id. here product id and user id are foreign keys and create 
+relation between cart table and product table)
+
+-user can then place order(order table can have columns order id, user id)
+and do the payment(payment table can have columns payment mode, payment id)
+all of these will be stored in customer details database. 
+
+->Admin
+admin is 1)able to manage user(insert,update,delete)
+2)able to manage categories of products(which product falls in which category)
+3)able to Manage products (managing and updating product database,seeing 
+which product is out of stock, adding new products etc)
+4)view orders
+5) view payments(sending receipt as confirmation of payment etc)
